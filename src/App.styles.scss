@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+body {
+  font-family: $primary-font;
+  background: $color-primary;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $color-secondary;
+  border-radius: 0.625rem;
+  width: 80%;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 5vh;
+  overflow: overlay;
+  box-shadow: 0 0 10px $shadow-color;
+}

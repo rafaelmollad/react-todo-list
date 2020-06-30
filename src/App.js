@@ -1,6 +1,4 @@
 import React from "react";
-import "./App.css";
-
 import HomePage from "./pages/HomePage/HomePage.component";
 import Navbar from "./components/Navbar/Navbar.component";
 import CompleteTasksPage from "./pages/CompleteTasksPage/CompleteTasksPage.component";

@@ -18,7 +18,7 @@ class Calendar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="date">
         <p>{this.state.date}</p>
       </div>
     );

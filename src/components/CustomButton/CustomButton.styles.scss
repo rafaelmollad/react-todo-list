@@ -1,0 +1,23 @@
+.custom-button {
+  background: transparent;
+  padding: 1rem 0;
+  width: 40%;
+  border-radius: 0.3125rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  border: 1px solid $border-color;
+  border-left: none;
+  font-family: $primary-font;
+  letter-spacing: 0.05rem;
+  color: $text-color;
+  font-size: 0.9rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

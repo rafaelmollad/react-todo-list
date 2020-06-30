@@ -1,3 +1,5 @@
+import TodoList from "../components/TodoList/TodoList.component";
+
 const initState = {
   todo: "",
   todos: [],
@@ -17,7 +19,7 @@ const rootReducer = (state = initState, action) => {
         todos: [...state.todos, { todo: action.todo, id: action.id }],
         todo: "",
       };
-    case "DELETE_TODO":
+    case "MARK_AS_COMPLETE":
       const completeTodo = state.todos.find((todo) => todo.id === action.id);
       return {
         ...state,
@@ -35,6 +37,20 @@ const rootReducer = (state = initState, action) => {
           (todo) => todo.id !== action.id
         ),
       };
+    case "DELETE_TODO":
+      if (action.listName === "todos") {
+        return {
+          ...state,
+          todos: state.todos.filter((todo) => todo.id !== action.id),
+        };
+      } else {
+        return {
+          ...state,
+          completeTodos: state.completeTodos.filter(
+            (todo) => todo.id !== action.id
+          ),
+        };
+      }
   }
 
   return state;

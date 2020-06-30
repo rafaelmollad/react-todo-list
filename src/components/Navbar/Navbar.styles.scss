@@ -1,0 +1,30 @@
+.nav-bar-container {
+  width: 100%;
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      li {
+        a {
+          color: $text-color;
+        }
+
+        &:nth-child(1) {
+          margin-right: 1rem;
+        }
+      }
+
+      .selected {
+        text-decoration: underline;
+      }
+    }
+  }
+}

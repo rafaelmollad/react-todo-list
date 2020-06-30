@@ -1,19 +1,23 @@
 import React from "react";
 
 import Calendar from "../../components/Calendar/Calendar.component";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="nav-bar-container">
       <nav>
         <Calendar />
-        <ul>
-          <li>
-            <Link to="/">Incomplete tasks</Link>
+        <ul className="menu">
+          <li className="menu-item">
+            <NavLink exact to="/" activeClassName="selected">
+              Incomplete tasks
+            </NavLink>
           </li>
-          <li>
-            <Link to="/completeTasksPage">Complete Tasks</Link>
+          <li className="menu-item">
+            <NavLink to="/completeTasksPage" activeClassName="selected">
+              Complete Tasks
+            </NavLink>
           </li>
         </ul>
       </nav>

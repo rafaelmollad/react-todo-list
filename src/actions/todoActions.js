@@ -13,9 +13,9 @@ export const addTodo = (todo, id) => {
   };
 };
 
-export const deleteTodo = (id) => {
+export const markAsComplete = (id) => {
   return {
-    type: "DELETE_TODO",
+    type: "MARK_AS_COMPLETE",
     id,
   };
 };
@@ -24,5 +24,13 @@ export const recoverTodo = (id) => {
   return {
     type: "RECOVER_TODO",
     id,
+  };
+};
+
+export const deleteTodo = (id, listName) => {
+  return {
+    type: "DELETE_TODO",
+    id,
+    listName,
   };
 };

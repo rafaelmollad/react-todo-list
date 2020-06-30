@@ -1,11 +1,7 @@
 import React from "react";
 
 const CustomButton = ({ text }) => {
-  return (
-    <div>
-      <button>{text}</button>
-    </div>
-  );
+  return <button className="custom-button">{text}</button>;
 };
 
 export default CustomButton;

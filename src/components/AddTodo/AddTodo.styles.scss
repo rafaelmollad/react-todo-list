@@ -1,0 +1,25 @@
+.form-container {
+  margin-bottom: 1.5rem;
+  form {
+    display: flex;
+
+    input {
+      border: 1px solid $border-color;
+      padding-left: 0.5rem;
+      border-top-left-radius: 0.3125rem;
+      border-bottom-left-radius: 0.3125rem;
+      color: $black;
+      font-size: 1.01rem;
+      font-family: $primary-font;
+      width: 60%;
+
+      &::placeholder {
+        font-family: $primary-font;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
