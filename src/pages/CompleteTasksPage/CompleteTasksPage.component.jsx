@@ -12,7 +12,7 @@ class CompleteTasksPage extends Component {
         {this.props.completeTodos.length > 0 ? (
           <TodoList todos={this.props.completeTodos} />
         ) : (
-          <div class="empty-list-container">
+          <div className="empty-list-container">
             <img src={emptyListTwo} alt="Woman" />
           </div>
         )}
