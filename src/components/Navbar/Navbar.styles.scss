@@ -7,6 +7,14 @@
     width: 100%;
     align-items: center;
 
+    .left-container {
+      .tasks-message {
+        position: relative;
+        top: 0.3125rem;
+        display: none;
+      }
+    }
+
     .menu {
       display: flex;
       width: 100%;

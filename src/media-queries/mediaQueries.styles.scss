@@ -11,6 +11,10 @@
     flex-direction: row;
   }
 
+  .nav-bar-container nav .menu {
+    justify-content: flex-end;
+  }
+
   .date,
   .menu {
     flex: 1;
@@ -66,15 +70,15 @@
     }
   }
 
-  .nav-bar-container nav .menu {
-    justify-content: flex-end;
-  }
-
   .form-container form input {
     width: 30%;
   }
 
   .custom-button {
     width: 12%;
+  }
+
+  .nav-bar-container nav .left-container .tasks-message {
+    display: inline-block;
   }
 }

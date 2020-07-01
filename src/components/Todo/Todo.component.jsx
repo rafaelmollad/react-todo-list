@@ -34,7 +34,6 @@ class Todo extends Component {
   };
 
   render() {
-    console.log(this.props);
     const { todo, id } = this.props;
     return (
       <div className="todo">
