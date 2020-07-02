@@ -32,7 +32,7 @@ const Navbar = (props) => {
           </li>
           <li className="menu-item">
             <NavLink to="/completeTasksPage" activeClassName="selected">
-              Complete Tasks
+              Completed tasks
             </NavLink>
           </li>
         </ul>
